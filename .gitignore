@@ -1,0 +1,100 @@
+mathgame
+memstats
+unit_tests
+ascii_image
+bitmap
+test_write_ppm
+test_write_ppm_2d
+minesweeper
+sorted_restaurants
+match_braces
+.vscode
+dynamic_restaurants
+slow
+2048
+hello
+cypher
+wordle
+restaurants
+buddhabrot
+thread_mandelbrot
+.DS_Store
+multi_mandelbrot
+single_mandelbrot
+*.swp
+benchmark2
+benchmark1
+reallocate
+print
+test
+memerr2
+readvector
+linkedlist
+dec2bin
+binarychar
+word
+encode_file
+encode
+decode
+glitch
+test_ppm
+vgcore.*
+core
+snackbar
+rpc
+password
+*.class
+a.out
+
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
