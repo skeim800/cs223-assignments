@@ -18,8 +18,8 @@ int main() {
  srand((unsigned) time(&t));
 
  for (int i=0;i<rounds;i++){
-  int num_one = rand() % 10;
-  int num_two = rand() % 10;
+  int num_one = (rand() % 9) + 1;
+  int num_two = (rand() % 9) +  1;
   printf("%d + %d = ? ", num_one, num_two);
   int response;
   scanf("%d", &response);
