@@ -12,6 +12,7 @@ int main(int argc, char* argv[]) {
 	char word2[20];
 	char** crossword;
 		
+	//checks that there are two words as input
 	if (argc < 3){
   		printf("Usage: %s\n", argv[0]);
 		exit(0);
@@ -21,6 +22,8 @@ int main(int argc, char* argv[]) {
 	strcpy(word2, argv[2]);
 	int word1CommonIndex = -1;
 	int word2CommonIndex = -1;
+	
+	//finds common letter between words
 	for(int i = 0; i < strlen(word1); i++){
 		for(int j = 0; j < strlen(word2); j++){
 			if(word1[i] == word2[j]){
@@ -33,12 +36,13 @@ int main(int argc, char* argv[]) {
 		}
 		}
 	}
-	//printf("%c %c", word1[word1CommonIndex], word2[word2CommonIndex]);
+
 	if(word1CommonIndex == -1 || word2CommonIndex == -1){
 		printf("No common letter!\n");
 		return 0;
 	}
 
+	//if common letter, creates a grid where the words overlap with common letter
 	crossword = malloc(sizeof(char*) * strlen(word1));
 	for(int i = 0; i <  strlen(word1); i++){
 		crossword[i] = malloc(sizeof(char) * strlen(word2));
@@ -55,6 +59,7 @@ int main(int argc, char* argv[]) {
 		}
 	}
 
+	//prints the grid with overlapping words
 	for(int i = 0; i < strlen(word1); i++){
 		for(int j = 0; j < strlen(word2); j++){
 			printf("%c ", crossword[i][j]);
