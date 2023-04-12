@@ -49,6 +49,7 @@ int main() {
 	}
 
 	free(numbers);	
-	
+	fclose(fp);	
+
 	return 0;
 }
